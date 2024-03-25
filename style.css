@@ -1,0 +1,105 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-image: url('imagens/i747410.jpeg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.drawer-container {
+    position: relative;
+}
+
+.drawer {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -300px;
+    background-color: #ffdbfd;
+    box-shadow: 0 0 10px rgba(219, 31, 219, 0.1);
+    transition: left 0.3s ease;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+
+.drawer-content h2 {
+
+background-image: url('imagens/download-removebg-preview\ \(21\).png');
+background-size: 80px;
+background-repeat: no-repeat;
+background-position: center bottom; /* Posiciona a imagem no centro inferior do título */
+padding: 80px;
+padding-top: 30px; /* Ajusta o espaço acima do título para acomodar a imagem */
+margin: 0 auto;
+margin-top: auto; /* Centraliza verticalmente */
+margin-bottom: auto; /* Centraliza verticalmente */
+text-align: center;
+font-family: "Lobster", sans-serif;
+color: #e69f1b;
+font-size: 30px;
+
+    
+}
+
+.drawer.open {
+    left: 0;
+}
+
+.drawer-content ul {
+    padding: 30px;
+}
+
+.drawer-toggle {
+    font-family: 'Courier New', Courier, monospace;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #f3b4ff;
+    color: rgb(172, 48, 172);
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    z-index: 1001;
+}
+
+.drawer-content li {
+    margin-bottom: 10px;
+    list-style: none;
+    position: relative;
+    padding-left: 30px;
+}
+
+.drawer-content li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-image: url('imagens/10255618-removebg-preview.png');
+    background-size: cover;
+}
+
+.drawer-toggle:hover {
+    color: #f19934;
+    background-color: #ffd57a;
+}
+
+.hide {
+    display: none;
+}
+
+
+  
+    
+  
+  
